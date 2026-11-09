@@ -1,0 +1,21 @@
+{
+  "name": "2bulu-blog-sync",
+  "version": "0.1.0",
+  "description": "Export selected 2bulu tracks from your signed-in Chrome session as GeoJSON",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "2bulu-blog-sync": "./cli.mjs"
+  },
+  "files": [
+    "browser.mjs",
+    "cli.mjs",
+    "tracks.mjs"
+  ],
+  "dependencies": {
+    "playwright-core": "^1.65.0"
+  }
+}
