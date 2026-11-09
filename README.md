@@ -5,6 +5,7 @@
 ## 效果预览
 
 ![博客徒步页面展示西湖西线示例轨迹](./docs/images/hikes-preview.png)
+![博客徒步页面展示西湖西线示例轨迹](./docs/images/img.png)
 
 ## 准备
 

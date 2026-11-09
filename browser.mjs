@@ -29,6 +29,7 @@ function accountContext(browser) {
   const openListPage = contexts
     .flatMap((context) => context.pages())
     .find((page) => {
+      if (!URL.canParse(page.url())) return false
       const url = new URL(page.url())
       return url.origin === ORIGIN && url.pathname === LIST_PATH && !url.search
     })
@@ -64,6 +65,7 @@ function canonicalId(value) {
 }
 
 function detailId(urlString) {
+  if (!URL.canParse(urlString)) return null
   const url = new URL(urlString)
   if (url.origin !== ORIGIN) return null
   const raw =
