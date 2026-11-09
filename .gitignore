@@ -1,0 +1,30 @@
+# 依赖和本地生成的 npm 包
+node_modules/
+*.tgz
+
+# 私人配置、轨迹清单与同步缓存
+.env
+.env.*
+!.env.example
+selection.json
+selection.local.json
+tracks-list.json
+.cache/
+cache/
+.local/
+
+# 轨迹文件和同步中断时留下的临时输出
+tracks.json
+*.geojson
+*.geojson.*.tmp
+*.gpx
+*.kml
+*.kmz
+*.fit
+*.tcx
+
+# 编辑器、系统文件和日志
+.idea/
+.vscode/
+.DS_Store
+*.log
